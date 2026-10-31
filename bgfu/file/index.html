@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gifts of India Watch — Illustrated Epics for Children</title>
+<meta name="description" content="Scan a chapter's QR code and watch the animated Ramayana, Mahabharata and Bhagavad Gita stories that go with your Gifts of India books.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="#/" class="logo">
+      <span class="logo-mark">ॐ</span>
+      <span class="logo-text"><h2>Gifts of</h2><b><h2>India</h2></b></span>
+    <p data-i18n="tagline">Powered by:-<h3>Powered by:-Techy Herit</h3></p>
+
+    </a>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="hi">हिंदी</button>
+        <button data-lang="en" class="active">English</button>
+      </div>
+      <button id="themeBtn" class="ibtn" aria-label="Dark mode">🌙</button><button id="userBtn" class="btn-outline">Log in</button>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="homeView">
+  <nav class="crumbs">
+    <a href="#/" data-i18n="home">Home</a><span>/</span><span data-i18n="bookTitle">Bhagavad Gita — Finally Understood</span>
+  </nav>
+
+  <section class="hero">
+    <img src="https://watch.sanatanstories.in/images/bgfu-hero.png" alt="" class="hero-bg">
+      <h1 data-i18n="bookTitle">Bhagavad Gita — Finally Understood</h1>
+      <p data-i18n="tagline">All 18 chapters in contemporary language with short films</p>
+      <div class="hero-meta">
+        <span class="pill" data-i18n="chapterCount">18 chapters</span>
+        <a href="https://bhagavadgita18.netlify.app/" class="btn" data-i18n="buy">Read Online Bhagavad Gita</a>
+        <span class="pill"><table>
+          <tr><td>Username:-</td><td>User</td></tr>
+          <tr><td>Password:-</td><td>1234</td></tr>
+        </table>
+      </span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="tools"><input id="q" type="search" placeholder="Search spiritual content…" aria-label="Search"><div id="chips" class="chips"></div></div>
+    <h2 class="section-title" data-i18n="chapters">Chapters</h2>
+    <div class="grid" id="chapterGrid"></div>
+  </section>
+</main>
+<main class="container" id="chapterView" hidden>
+  <nav class="crumbs">
+    <a href="#/" data-i18n="home">Home</a><span>/</span>
+    <a href="#/" data-i18n="bookTitle">Bhagavad Gita — Finally Understood</a><span>/</span>
+    <span id="crumbTitle"></span>
+  </nav>
+
+  <div class="watch-layout">
+    <aside class="sidebar">
+      <a href="#/" class="side-book">
+        <img src="https://watch.sanatanstories.in/images/bgfu-hero.png" alt="" class="hero-bg">
+        <div><strong data-i18n="bookTitle">Bhagavad Gita — Finally Understood</strong><small data-i18n="chapterCount">18 chapters</small></div>
+      </a>
+      <div class="side-list" id="sideList"></div>
+    </aside>
+
+    <section class="player-col">
+      <div class="player" id="player"></div>
+      <div class="chap-info">
+        <small class="eyebrow"><span data-i18n="chapterWord">Chapter</span> <span id="chNum"></span></small>
+        <h1 id="chTitle"></h1>
+        <p class="sanskrit" id="chSkt"></p>
+        <div class="chap-foot">
+          <span class="muted"><span data-i18n="chapterWord">Chapter</span> <span id="chNum2"></span> <span data-i18n="ofWord">of</span> 18</span>
+          <a href="#/" class="muted link" data-i18n="allChapters">All chapters ↑</a>
+        </div>
+        <div class="actions" id="actions"></div>
+        <div class="pager">
+          <a id="prevBtn" class="btn-outline" data-i18n="prev">← Previous</a>
+          <a id="nextBtn" class="btn" data-i18n="next">Next →</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<main class="container" id="dashView" hidden></main>
+<div id="modal" hidden><div class="mbox"><button class="mx" aria-label="Close">×</button><div id="mbody"></div></div></div>
+<footer class="site-footer">
+  <div class="container foot">
+    <div>
+      <a href="#" class="logo"><span class="logo-mark">ॐ</span><span class="logo-text">Gifts of <b>India</b></span></a>
+      <p data-i18n="footDesc">Illustrated Hindu mythology books for children, brought to life chapter by chapter — scan the QR in your book to watch.</p>
+    </div>
+    <div>
+      <h4 data-i18n="shop">Shop</h4>
+      <a href="#">giftsofindia.in</a>
+      <a href="#" data-i18n="allBooks">All books &amp; bundles</a>
+    </div>
+    <div>
+      <h4 data-i18n="watch">Watch</h4>
+      <a href="#" data-i18n="library">My Library</a>
+      <a href="#" data-i18n="login">Log in</a>
+    </div>
+  </div>
+  <p class="copy">© 2026 Gifts of India. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
